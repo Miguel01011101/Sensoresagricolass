@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensores Agrícolas - Importación De riego</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #10b981, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background-color: #f0fdf4;
+            background-image: radial-gradient(#10b981 0.5px, transparent 0.5px), radial-gradient(#10b981 0.5px, #f0fdf4 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            opacity: 0.1;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-emerald-500 p-2 rounded-lg">
+                       <img src="img/Agris.jpg.jpg" alt="Logo" height="100" width="60">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 5a7 7 0 100 14 7 7 0 000-14z" />
+                        </svg>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight text-emerald-900">Agri<span class="text-emerald-500">Sensor</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#inicio" class="hover:text-emerald-600 transition">Inicio</a>
+                    <a href="#sensores" class="hover:text-emerald-600 transition">Tecnología</a>
+                    <a href="#especificaciones" class="hover:text-emerald-600 transition">Especificaciones</a>
+                    <a href="#tienda" class="hover:text-emerald-600 transition">Tienda</a>
+                    <a href="#logistica" class="hover:text-emerald-600 transition">Importación</a>
+                    <a href="#nosotros" class="hover:text-emerald-600 transition">FAQ</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-emerald-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-emerald-700 transition shadow-lg shadow-emerald-200">
+                        Contactar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="relative pt-32 pb-20 overflow-hidden">
+        <div class="absolute inset-0 hero-pattern -z-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex items-center justify-between">
+                <div class="lg:w-1/2 space-y-8">
+                    <span class="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-sm font-bold tracking-wide uppercase">
+                        SICK AG Waldkirch, Alemania ➔ Culiacán, Sinaloa
+                    </span>
+                    <h1 class="text-5xl lg:text-7xl font-bold text-slate-900 leading-tight">
+                        Cultiva el futuro con <span class="gradient-text">Precisión Alemana</span>
+                    </h1>
+                    <p class="text-xl text-slate-600 leading-relaxed max-w-xl">
+                        Importamos la tecnología líder de SICK AG para transformar la agricultura en Sinaloa. Sensores inteligentes que optimizan el riego, reducen costos y maximizan la producción.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#tienda" class="bg-emerald-600 text-white text-center px-8 py-4 rounded-2xl font-bold hover:bg-emerald-700 transition-all transform hover:scale-105 shadow-xl shadow-emerald-200">
+                            Ver Catálogo SICK
+                        </a>
+                        <button class="flex items-center justify-center space-x-2 px-8 py-4 rounded-2xl font-bold border-2 border-slate-200 hover:bg-slate-50 transition group">
+                            <span>Ficha Técnica Alemania</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:translate-x-1 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 mt-16 lg:mt-0 relative">
+                    <div class="relative w-full h-[550px] bg-emerald-100 rounded-[4rem] overflow-hidden shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-emerald-600/20 to-transparent"></div>
+                        <img src="img/paisaje (1).png" >
+                        <div class="absolute bottom-10 left-10 glass p-6 rounded-3xl shadow-xl max-w-xs animate-bounce-slow">
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-blue-100 p-3 rounded-2xl">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-500 uppercase tracking-wider">Presión de Riego</p>
+                                    <p class="text-2xl font-bold text-slate-900">4.2 bar <span class="text-emerald-500 text-sm font-normal">Estable</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sensores" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">¿Cómo impacta nuestra tecnología?</h2>
+                <p class="text-slate-600 max-w-3xl mx-auto text-lg">La integración de sensores SICK permite una agricultura de precisión que responde a los retos climáticos actuales.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="p-10 rounded-[3rem] bg-emerald-50 border border-emerald-100 transition card-hover group">
+                    <div class="w-20 h-20 bg-emerald-500 rounded-3xl flex items-center justify-center mb-8 text-white group-hover:scale-110 transition shadow-lg shadow-emerald-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-emerald-900">Optimización Hídrica</h3>
+                    <p class="text-slate-600 leading-relaxed">Reducción del 30% en el consumo de agua mediante el monitoreo exacto de la humedad del suelo y la presión en tuberías de riego por goteo.</p>
+                </div>
+
+                <div class="p-10 rounded-[3rem] bg-blue-50 border border-blue-100 transition card-hover group">
+                    <div class="w-20 h-20 bg-blue-500 rounded-3xl flex items-center justify-center mb-8 text-white group-hover:scale-110 transition shadow-lg shadow-blue-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-900">Prevención de Plagas</h3>
+                    <p class="text-slate-600 leading-relaxed">El control estricto de microclimas evita la proliferación de hongos y bacterias, asegurando que el cultivo crezca en condiciones óptimas de salud.</p>
+                </div>
+
+                <div class="p-10 rounded-[3rem] bg-amber-50 border border-amber-100 transition card-hover group">
+                    <div class="w-20 h-20 bg-amber-500 rounded-3xl flex items-center justify-center mb-8 text-white group-hover:scale-110 transition shadow-lg shadow-amber-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-amber-900">Rentabilidad Local</h3>
+                    <p class="text-slate-600 leading-relaxed">Impulsamos la economía de Sinaloa generando empleos técnicos y reduciendo el desperdicio de fertilizantes en un 15% anual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="especificaciones" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex gap-16 items-start">
+                <div class="lg:w-1/3 sticky top-32">
+                    <h2 class="text-4xl font-bold text-slate-900 mb-6">Especificaciones de Grado Industrial</h2>
+                    <p class="text-slate-600 mb-8 leading-relaxed">Nuestros sensores no son juguetes. Son equipos certificados por la Unión Europea para trabajar en las condiciones más hostiles de Sinaloa.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center space-x-3 text-emerald-700 font-semibold">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
+                            <span>Protección IP67 e IP69K</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-emerald-700 font-semibold">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
+                            <span>Protocolo IO-Link Integrado</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-emerald-700 font-semibold">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
+                            <span>Resistencia a Agroquímicos</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-2/3 mt-12 lg:mt-0">
+                    <div class="bg-white rounded-[2rem] shadow-xl overflow-hidden border border-slate-100">
+                        <table class="w-full text-left">
+                            <thead class="bg-emerald-600 text-white">
+                                <tr>
+                                    <th class="px-8 py-6">Parámetro</th>
+                                    <th class="px-8 py-6">Detalle Técnico</th>
+                                    <th class="px-8 py-6">Certificación</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100">
+                                <tr class="hover:bg-slate-50 transition">
+                                    <td class="px-8 py-6 font-bold">Rango de Medición</td>
+                                    <td class="px-8 py-6">-1 bar a +600 bar</td>
+                                    <td class="px-8 py-6 text-sm text-slate-500">CE / UL</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50 transition">
+                                    <td class="px-8 py-6 font-bold">Precisión</td>
+                                    <td class="px-8 py-6">≤ ± 0.5 % del margen</td>
+                                    <td class="px-8 py-6 text-sm text-slate-500">ISO 9001</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50 transition">
+                                    <td class="px-8 py-6 font-bold">Temperatura Operativa</td>
+                                    <td class="px-8 py-6">-20 °C a +85 °C</td>
+                                    <td class="px-8 py-6 text-sm text-slate-500">DIN EN 60068</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50 transition">
+                                    <td class="px-8 py-6 font-bold">Salida de Señal</td>
+                                    <td class="px-8 py-6">4 mA ... 20 mA / 0 V ... 10 V</td>
+                                    <td class="px-8 py-6 text-sm text-slate-500">Analógica/Digital</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50 transition">
+                                    <td class="px-8 py-6 font-bold">Material de Carcasa</td>
+                                    <td class="px-8 py-6">Acero Inoxidable 316L</td>
+                                    <td class="px-8 py-6 text-sm text-slate-500">Grado Alimenticio</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tienda" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-4xl font-bold mb-4">Sensores Agricolas <span class="text-emerald-400">en Stock</span></h2>
+                    <p class="text-slate-400">Precios competitivos para agricultores locales con factura y garantía.</p>
+                </div>
+                <div class="mt-8 md:mt-0">
+                    <button class="bg-white text-slate-900 px-8 py-4 rounded-2xl font-bold hover:bg-emerald-400 hover:text-white transition-all">Ver PDF de Precios</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-slate-800 rounded-[3rem] p-8 border border-slate-700 hover:border-emerald-500 transition-all group">
+                    <div class="relative mb-8 rounded-[2rem] overflow-hidden bg-white/5 h-64 flex flex-col items-center justify-center">
+                        <span class="absolute top-4 right-4 bg-emerald-500 text-white text-xs font-bold px-4 py-2 rounded-full">ALTA GAMA</span>
+                        <div class="text-emerald-400 text-center">
+                            <img src="img/Ss1.jpg.jpeg" style="margin-top: 180px;">
+                             <p class="text-sm uppercase font-bold tracking-widest mb-4">REEEEEEEEMPLAZA AQUI</p>
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                             </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4 tracking-tight">Sensor Izquierdo</h3>
+                    <p class="text-slate-400 text-sm mb-8 leading-relaxed">Display electrónico de 4 dígitos. Permite rotar la carcasa 330°. Precisión extrema para cabezales de riego.</p>
+                    <div class="flex items-center justify-between border-t border-slate-700 pt-8">
+                        <div>
+                            <span class="block text-slate-500 line-through text-sm">$11,500</span>
+                            <span class="text-3xl font-bold text-emerald-400">$9,000<span class="text-sm text-slate-300 ml-1">MXN</span></span>
+                        </div>
+                        <button onclick="addToCart('Sensor SICK Digital')" class="bg-emerald-600 p-4 rounded-2xl hover:bg-emerald-500 transition shadow-lg shadow-emerald-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-[3rem] p-8 border border-slate-700 hover:border-blue-500 transition-all group">
+                    <div class="relative mb-8 rounded-[2rem] overflow-hidden bg-white/5 h-64 flex flex-col items-center justify-center">
+                        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs font-bold px-4 py-2 rounded-full">ESTÁNDAR</span>
+                        <div class="text-blue-400 text-center">
+                            <div style="display: flex;">
+                            <img src="img/Ssg3.jpg.jpeg" style="margin-top: 180px;" alt="imagen de sensor de enmedio">   
+                            </div>
+                             <p class="text-sm uppercase font-bold tracking-widest mb-4"></p>
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                             </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4 tracking-tight">Sensor De enmedio</h3>
+                    <p class="text-slate-400 text-sm mb-8 leading-relaxed">Transmisor compacto sin pantalla. Conexión M12. Ideal para pozos profundos y monitoreo constante de presión.</p>
+                    <div class="flex items-center justify-between border-t border-slate-700 pt-8">
+                        <div>
+                            <span class="block text-slate-500 line-through text-sm">$5,200</span>
+                            <span class="text-3xl font-bold text-blue-400">$4,000<span class="text-sm text-slate-300 ml-1">MXN</span></span>
+                        </div>
+                        <button onclick="addToCart('Sensor SICK Industrial')" class="bg-blue-600 p-4 rounded-2xl hover:bg-blue-500 transition shadow-lg shadow-blue-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-[3rem] p-8 border border-slate-700 hover:border-amber-500 transition-all group">
+                    <div class="relative mb-8 rounded-[2rem] overflow-hidden bg-white/5 h-64 flex flex-col items-center justify-center">
+                        <span class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-4 py-2 rounded-full">COMPACTO</span>
+                        <div class="text-amber-400 text-center">
+                            <img src="img/Ssg2.jpg.jpeg" style="margin-top: 180px;">
+                             <p class="text-sm uppercase font-bold tracking-widest mb-4"></p>
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                             </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4 tracking-tight">Sensor Derecho</h3>
+                    <p class="text-slate-400 text-sm mb-8 leading-relaxed">Presostato electrónico con pantalla bicolor (Verde/Rojo) para alertas visuales rápidas en campo.</p>
+                    <div class="flex items-center justify-between border-t border-slate-700 pt-8">
+                        <div>
+                            <span class="block text-slate-500 line-through text-sm">$7,800</span>
+                            <span class="text-3xl font-bold text-amber-400">$6,000<span class="text-sm text-slate-300 ml-1">MXN</span></span>
+                        </div>
+                        <button onclick="addToCart('Sensor SICK Compacto')" class="bg-amber-600 p-4 rounded-2xl hover:bg-amber-500 transition shadow-lg shadow-amber-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-emerald-500/10 blur-[150px] rounded-full"></div>
+    </section>
+
+    <section id="logistica" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-[4rem] p-12 lg:p-24 relative text-white shadow-3xl shadow-emerald-200">
+                <div class="lg:w-2/3">
+                    <h2 class="text-5xl font-bold mb-10 leading-tight">Puente Tecnológico: Alemania - Sinaloa</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-white/20 p-3 rounded-xl"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+                                <p class="text-xl font-bold">Origen</p>
+                            </div>
+                            <p class="text-emerald-100 leading-relaxed">Waldkirch, Alemania. Sede central de SICK AG. Los equipos son fabricados bajo los estándares de calidad más rigurosos del mundo.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-white/20 p-3 rounded-xl"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg></div>
+                                <p class="text-xl font-bold">Logística Aérea</p>
+                            </div>
+                            <p class="text-emerald-100 leading-relaxed">Vuelos directos Frankfurt ➔ CDMX. Despacho aduanal preferencial mediante el TLCUEM (Tratado México - Unión Europea).</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-white/20 p-3 rounded-xl"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+                                <p class="text-xl font-bold">Cero Aranceles</p>
+                            </div>
+                            <p class="text-emerald-100 leading-relaxed">Gracias al certificado de origen EUR.1, nuestros equipos entran al país con 0% de impuestos de importación, permitiéndonos darte precios de fábrica.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-white/20 p-3 rounded-xl"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+                                <p class="text-xl font-bold">Soporte en Culiacán</p>
+                            </div>
+                            <p class="text-emerald-100 leading-relaxed">No solo vendemos, instalamos y configuramos. Contamos con ingenieros locales listos para dar mantenimiento en tu predio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:block absolute -right-20 -bottom-20 w-1/3 h-[120%] bg-white/5 backdrop-blur-3xl rounded-[4rem] border border-white/20 p-12 transform rotate-6">
+                    <div class="space-y-10">
+                        <div class="h-4 w-3/4 bg-white/20 rounded-full"></div>
+                        <div class="h-32 bg-white/10 rounded-3xl"></div>
+                        <div class="h-32 bg-white/10 rounded-3xl"></div>
+                        <div class="h-32 bg-white/10 rounded-3xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16">Preguntas Frecuentes</h2>
+            <div class="space-y-6">
+                <div class="p-8 rounded-3xl border border-slate-100 hover:bg-slate-50 transition">
+                    <h4 class="text-lg font-bold mb-3">¿Por qué usar SICK AG y no sensores genéricos?</h4>
+                    <p class="text-slate-600">Los sensores industriales alemanes tienen una vida útil 5 veces mayor y una tasa de error casi nula, lo que evita que un fallo en el sensor arruine toda una cosecha por exceso o falta de riego.</p>
+                </div>
+                <div class="p-8 rounded-3xl border border-slate-100 hover:bg-slate-50 transition">
+                    <h4 class="text-lg font-bold mb-3">¿Cuánto tiempo tarda en llegar un pedido si no hay stock?</h4>
+                    <p class="text-slate-600">Nuestra logística aérea nos permite traer equipos desde Alemania en un tiempo récord de 7 a 10 días hábiles directamente hasta Culiacán.</p>
+                </div>
+                <div class="p-8 rounded-3xl border border-slate-100 hover:bg-slate-50 transition">
+                    <h4 class="text-lg font-bold mb-3">¿Ofrecen factura mexicana?</h4>
+                    <p class="text-slate-600">Sí, todos nuestros precios incluyen IVA y emitimos factura CFDI para que puedas deducir tu inversión tecnológica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="nosotros" class="bg-slate-900 text-white pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-8">
+                        <div class="bg-emerald-500 p-2 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 5a7 7 0 100 14 7 7 0 000-14z" />
+                            </svg>
+                        </div>
+                        <span class="text-3xl font-bold tracking-tight">AgriSensores</span>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed mb-8">Líderes en la integración de hardware alemán SICK AG para el campo sinaloense. Innovación que se traduce en toneladas.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-emerald-500 transition">FB</a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-emerald-500 transition">IG</a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-emerald-500 transition">LI</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-xl mb-8">Tecnología</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#" class="hover:text-emerald-400 transition">Sensores de Humedad</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition">Control de Presión</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition">Flujómetros</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition">Sistemas IO-Link</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-xl mb-8">Soporte</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#" class="hover:text-emerald-400 transition">Garantía SICK AG</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition">Instalación en Sitio</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition">Configuración de PLC</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition">Consultoría Agrícola</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-xl mb-8">Ubicación</h4>
+                    <p class="text-slate-400 mb-6">Oficinas y Almacén Logístico:<br>Blvd. Pedro Infante, Culiacán Rosales,<br>Sinaloa, México.</p>
+                    <div class="p-4 bg-white/5 rounded-2xl border border-white/10">
+                        <p class="text-xs text-emerald-400 font-bold uppercase mb-2">Horario de Atención</p>
+                        <p class="text-sm">Lun - Vie: 8:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-10 text-center text-slate-500 text-sm">
+                <p>&copy; 2026 AgroTech Sensors Sinaloa. Todos los derechos reservados. SICK AG y sus logotipos son marcas registradas de SICK AG, Alemania.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="fixed bottom-10 right-10 transform translate-y-20 opacity-0 transition-all duration-500 pointer-events-none z-[100]">
+        <div class="bg-white shadow-2xl rounded-[2rem] p-6 flex items-center space-x-6 border border-emerald-100">
+            <div class="bg-emerald-100 text-emerald-600 p-4 rounded-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+            </div>
+            <div>
+                <p class="font-bold text-xl text-slate-900">¡Añadido!</p>
+                <p id="toast-message" class="text-slate-500">Producto listo para cotizar.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addToCart(productName) {
+            const toast = document.getElementById('toast');
+            const message = document.getElementById('toast-message');
+            message.innerText = `${productName} se ha añadido a tu solicitud.`;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 4000);
+        }
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-2xl', 'py-1');
+                nav.classList.remove('py-0');
+            } else {
+                nav.classList.remove('shadow-2xl', 'py-1');
+            }
+        });
+    </script>
+</body>
+</html>
